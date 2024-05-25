@@ -4,42 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/auth.css">
     <title>EPX Fitness Auth</title>
+    <style>
+    </style>
 </head>
 <body>
-    
-    <div class="container">
+    <div class="container d-flex align-items-center justify-content-center min-vh-100">
         <div class="card">
             <div class="inner-box" id="card">
                 <div class="card-front">
                     <h2>LOGIN</h2>
                     <form>
-                        <input type="email" class="input-box" placeholder="Email" required>
-                        <input type="password" class="input-box" placeholder="Password" required>
-                        <button type="submit" class="submit-btn">Submit</button>
-                        <input type="checkbox"><span>Remember Me</span>
+                        <input type="email" class="input-box form-control" placeholder="Email" required>
+                        <input type="password" class="input-box form-control" placeholder="Password" required>
+                        <button type="submit" class="submit-btn btn btn-primary">Submit</button>
+                        <div class="custom-control custom-checkbox mt-3">
+                            <input type="checkbox" class="custom-control-input" id="remember-me-login">
+                            <label class="custom-control-label" for="remember-me-login">Remember Me</label>
+                        </div>
                     </form>
-                    <button type="button" class="btn" onclick="openRegister()">I'm new here</button>
-                    <a href="">Forgot Password</a>
+                    <button type="button" class="btn btn-secondary" onclick="openRegister()">I'm new here</button>
+                    <a href="#">Forgot Password</a>
                     <a href="./index.html">Home</a>
                 </div>
                 <div class="card-back">
                     <h2>REGISTER</h2>
                     <form>
-                        <input type="text" class="input-box" placeholder="Your Name" required>
-                        <input type="email" class="input-box" placeholder="Your Email" required>
-                        <input type="password" class="input-box" placeholder="Password" required>
-                        <button type="submit" class="submit-btn">Submit</button>
-                        <input type="checkbox"><span>Remember Me</span>
+                        <input type="text" class="input-box form-control" placeholder="Your Name" required>
+                        <input type="email" class="input-box form-control" placeholder="Your Email" required>
+                        <input type="password" class="input-box form-control" placeholder="Password" required>
+                        <button type="submit" class="submit-btn btn btn-primary">Submit</button>
+                        <div class="custom-control custom-checkbox mt-3">
+                            <input type="checkbox" class="custom-control-input" id="remember-me-register">
+                            <label class="custom-control-label" for="remember-me-register">Remember Me</label>
+                        </div>
                     </form>
-                    <button type="button" class="btn" onclick="openLogin()">I've account</button>
-                    <a href="">Forgot Password</a>
+                    <button type="button" class="btn btn-secondary" onclick="openLogin()">I've account</button>
+                    <a href="#">Forgot Password</a>
                     <a href="./index.html">Home</a>
                 </div>
-                
             </div>
-            
         </div>
     </div>
     
@@ -47,12 +53,11 @@
         const card = document.getElementById("card");
 
         function openRegister() {
-            card.style.transform = "rotateY(-180deg";
+            card.style.transform = "rotateY(-180deg)";
         }
         function openLogin() {
-            card.style.transform = "rotateY(0deg";
+            card.style.transform = "rotateY(0deg)";
         }
-
     </script>
 </body>
 </html>

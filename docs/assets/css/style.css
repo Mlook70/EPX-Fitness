@@ -568,7 +568,7 @@ body {
   border-radius: var(--radius-10);
   height: 100%;
   overflow: hidden;
-  max-width: 280px; /* Set a max-width for smaller cards */
+  max-width: 300px; /* Set a max-width for smaller cards */
   margin: auto; /* Center the cards */
 }
 
@@ -668,10 +668,11 @@ body {
 
 .blog-card {
   background-color: var(--white);
-  border: 1px solid var(--light-gray);
   border-radius: var(--radius-10);
   height: 100%;
   overflow: hidden;
+  max-width: 300px; /* Set a max-width for smaller cards */
+  margin: auto; /* Center the cards */
 }
 
 .blog-card .card-banner { position: relative; }

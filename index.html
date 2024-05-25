@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EPX Fitness - Work Hard To Get Better Life</title>
+  <title>EPX Fitness - Elite Performance Experience</title>
 
   <!-- Custom CSS link -->
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <!-- Google font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +44,7 @@
           <li><a href="#footer" class="navbar-link" data-nav-link>Contact Us</a></li>
         </ul>
       </nav>
-      <a href="#" class="btn btn-secondary">Join Now</a>
+      <a href="/auth/auth.html" class="btn btn-secondary">Join Now</a>
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <span class="line"></span>
         <span class="line"></span>
@@ -61,7 +64,7 @@
             <p class="epx-fitness">EPX Fitness</p>
             <h1 class="h1 hero-title">No Pain No Gain</h1>
             <p class="section-text">Welcome to EPX Fitness. Our exclusive club offers the best facilities, personalized training, and excellent service. Join us for a Elite Fitness Experience.</p>
-            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="/auth/auth.html" class="btn btn-primary">Get Started</a>
           </div>
           <div class="hero-banner">
             <img src="./assets/images/hero-banner.png" width="660" height="753" alt="hero banner" class="w-100">
@@ -83,177 +86,178 @@
             <h2 class="h2 section-title">Welcome To EPX Fitness</h2>
             <p class="section-text">At EPX Fitness, we provide top-quality fitness services in a luxurious environment. Our state-of-the-art facilities, personalized training programs, and exceptional service ensure that you have the best fitness experience possible. Whether you are new to fitness or an experienced athlete, our expert trainers are here to help you achieve your goals. Join EPX Fitness today and enjoy a supportive and high-quality fitness community.</p>
             <div class="wrapper">
-              <a href="#" class="btn btn-primary">Explore More</a>
+              <a href="/auth/auth.html" class="btn btn-primary">Explore More</a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- VIDEO -->
-      <section class="section video" aria-label="video">
-        <div class="container">
-          <div class="video-card has-before has-bg-image" style="background-image: url('./assets/images/video-banner.jpg')">
-            <h2 class="h2 card-title">Explore Fitness Life</h2>
-            <button class="play-btn" aria-label="play video">
-              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
-            </button>
-            <a href="#" class="btn-link has-before">Watch More</a>
+<!-- CLASS -->
+<section class="section class bg-dark has-bg-image" aria-label="class" style="background-image: url('./assets/images/classes-bg.png')">
+  <div class="container" id="class">
+    <p class="section-subtitle">Our Classes</p>
+    <h2 class="h2 section-title text-center">EPX Classes For Every Goal</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="class-card">
+            <figure class="card-banner img-holder" style="--width: 300; --height: 180;">
+              <img src="./assets/images/class-1.png" width="300" height="180" loading="lazy" alt="Weight Lifting" class="img-cover">
+            </figure>
+            <div class="card-content">
+              <div class="title-wrapper">
+                <img src="./assets/images/class-icon-1.png" width="40" height="40" aria-hidden="true" alt="" class="title-icon">
+                <h3 class="h3"><a href="#" class="card-title">Weight Lifting</a></h3>
+              </div>
+              <p class="card-text">Enhance your strength with our Weight Lifting program. Build muscle and improve technique with expert trainers. Join EPX Fitness today.</p>
+              <div class="card-progress">
+                <div class="progress-wrapper">
+                  <p class="progress-label">Class Full</p>
+                  <span class="progress-value">85%</span>
+                </div>
+                <div class="progress-bg">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-
-      <!-- CLASS -->
-      <section class="section class bg-dark has-bg-image" aria-label="class" style="background-image: url('./assets/images/classes-bg.png')">
-        <div class="container" id="class">
-          <p class="section-subtitle">Our Classes</p>
-          <h2 class="h2 section-title text-center">EPX Classes For Every Goal</h2>
-          <ul class="class-list has-scrollbar">
-            <li class="scrollbar-item">
-              <div class="class-card">
-                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
-                  <img src="./assets/images/class-1.png" width="416" height="240" loading="lazy" alt="Weight Lifting" class="img-cover">
-                </figure>
-                <div class="card-content">
-                  <div class="title-wrapper">
-                    <img src="./assets/images/class-icon-1.png" width="52" height="52" aria-hidden="true" alt="" class="title-icon">
-                    <h3 class="h3"><a href="#" class="card-title">Weight Lifting</a></h3>
-                  </div>
-                  <p class="card-text">Enhance your strength with our Weight Lifting program. Build muscle and improve technique with expert trainers. Join EPX Fitness today.</p>
-                  <div class="card-progress">
-                    <div class="progress-wrapper">
-                      <p class="progress-label">Class Full</p>
-                      <span class="progress-value">85%</span>
-                    </div>
-                    <div class="progress-bg">
-                      <div class="progress-bar" style="width: 85%"></div>
-                    </div>
-                  </div>
+        <div class="swiper-slide">
+          <div class="class-card">
+            <figure class="card-banner img-holder" style="--width: 300; --height: 180;">
+              <img src="./assets/images/class-2.png" width="300" height="180" loading="lazy" alt="Cardio & Strength" class="img-cover">
+            </figure>
+            <div class="card-content">
+              <div class="title-wrapper">
+                <img src="./assets/images/class-icon-2.png" width="40" height="40" aria-hidden="true" alt="" class="title-icon">
+                <h3 class="h3"><a href="#" class="card-title">Cardio & Strength</a></h3>
+              </div>
+              <p class="card-text">Boost your fitness with our Cardio & Strength classes. Improve endurance and build muscle with expert guidance. Join EPX Fitness today.</p>
+              <div class="card-progress">
+                <div class="progress-wrapper">
+                  <p class="progress-label">Class Full</p>
+                  <span class="progress-value">70%</span>
+                </div>
+                <div class="progress-bg">
+                  <div class="progress-bar" style="width: 70%"></div>
                 </div>
               </div>
-            </li>
-            <li class="scrollbar-item">
-              <div class="class-card">
-                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
-                  <img src="./assets/images/class-2.png" width="416" height="240" loading="lazy" alt="Cardio & Strenght" class="img-cover">
-                </figure>
-                <div class="card-content">
-                  <div class="title-wrapper">
-                    <img src="./assets/images/class-icon-2.png" width="52" height="52" aria-hidden="true" alt="" class="title-icon">
-                    <h3 class="h3"><a href="#" class="card-title">Cardio & Strength</a></h3>
-                  </div>
-                  <p class="card-text">Boost your fitness with our Cardio & Strength classes. Improve endurance and build muscle with expert guidance. Join EPX Fitness today.</p>
-                  <div class="card-progress">
-                    <div class="progress-wrapper">
-                      <p class="progress-label">Class Full</p>
-                      <span class="progress-value">70%</span>
-                    </div>
-                    <div class="progress-bg">
-                      <div class="progress-bar" style="width: 70%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="scrollbar-item">
-              <div class="class-card">
-                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
-                  <img src="./assets/images/class-3.jpg" width="416" height="240" loading="lazy" alt="Power Yoga" class="img-cover">
-                </figure>
-                <div class="card-content">
-                  <div class="title-wrapper">
-                    <img src="./assets/images/class-icon-3.png" width="52" height="52" aria-hidden="true" alt="" class="title-icon">
-                    <h3 class="h3"><a href="#" class="card-title">Power Yoga</a></h3>
-                  </div>
-                  <p class="card-text">Build strength and flexibility with Power Yoga. Suitable for all levels, guided by experienced instructors. Join us at EPX Fitness.</p>
-                  <div class="card-progress">
-                    <div class="progress-wrapper">
-                      <p class="progress-label">Class Full</p>
-                      <span class="progress-value">90%</span>
-                    </div>
-                    <div class="progress-bg">
-                      <div class="progress-bar" style="width: 90%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="scrollbar-item">
-              <div class="class-card">
-                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
-                  <img src="./assets/images/class-4.jpg" width="416" height="240" loading="lazy" alt="The Fitness Pack" class="img-cover">
-                </figure>
-                <div class="card-content">
-                  <div class="title-wrapper">
-                    <img src="./assets/images/class-icon-4.png" width="52" height="52" aria-hidden="true" alt="" class="title-icon">
-                    <h3 class="h3"><a href="#" class="card-title">The Fitness Pack</a></h3>
-                  </div>
-                  <p class="card-text">Unlock your potential with The Fitness Pack. Enjoy a combination of cardio, strength, and flexibility workouts. Achieve your fitness goals with expert guidance at EPX Fitness.</p>
-                  <div class="card-progress">
-                    <div class="progress-wrapper">
-                      <p class="progress-label">Class Full</p>
-                      <span class="progress-value">60%</span>
-                    </div>
-                    <div class="progress-bg">
-                      <div class="progress-bar" style="width: 60%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-      </section>
-
-      <!-- BLOG -->
-      <section class="section blog" id="blog" aria-label="blog">
-        <div class="container">
-          <p class="section-subtitle">Our News</p>
-          <h2 class="h2 section-title text-center">Latest Blog Feed</h2>
-          <ul class="blog-list has-scrollbar">
-            <li class="scrollbar-item">
-              <div class="blog-card">
-                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                  <img src="./assets/images/blog-1.jpg" width="440" height="270" loading="lazy" alt="Going to the gym for the first time" class="img-cover">
-                  <time class="card-meta" datetime="2022-07-07">7 March 2024</time>
+        <div class="swiper-slide">
+          <div class="class-card">
+            <figure class="card-banner img-holder" style="--width: 300; --height: 180;">
+              <img src="./assets/images/class-3.jpg" width="300" height="180" loading="lazy" alt="Power Yoga" class="img-cover">
+            </figure>
+            <div class="card-content">
+              <div class="title-wrapper">
+                <img src="./assets/images/class-icon-3.png" width="40" height="40" aria-hidden="true" alt="" class="title-icon">
+                <h3 class="h3"><a href="#" class="card-title">Power Yoga</a></h3>
+              </div>
+              <p class="card-text">Build strength and flexibility with Power Yoga. Suitable for all levels, guided by experienced instructors. Join us at EPX Fitness.</p>
+              <div class="card-progress">
+                <div class="progress-wrapper">
+                  <p class="progress-label">Class Full</p>
+                  <span class="progress-value">90%</span>
                 </div>
-                <div class="card-content">
-                  <h3 class="h3"><a href="#" class="card-title">Going to the gym for the first time</a></h3>
-                  <p class="card-text">Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac habitasse platea dictumst.</p>
-                  <a href="#" class="btn-link has-before">Read More</a>
+                <div class="progress-bg">
+                  <div class="progress-bar" style="width: 90%"></div>
                 </div>
               </div>
-            </li>
-            <li class="scrollbar-item">
-              <div class="blog-card">
-                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                  <img src="./assets/images/blog-2.jpg" width="440" height="270" loading="lazy" alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
-                  <time class="card-meta" datetime="2022-07-07">7 March 2024</time>
-                </div>
-                <div class="card-content">
-                  <h3 class="h3"><a href="#" class="card-title">Parturient accumsan cacus pulvinar magna</a></h3>
-                  <p class="card-text">Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac habitasse platea dictumst.</p>
-                  <a href="#" class="btn-link has-before">Read More</a>
-                </div>
-              </div>
-            </li>
-            <li class="scrollbar-item">
-              <div class="blog-card">
-                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                  <img src="./assets/images/blog-3.jpg" width="440" height="270" loading="lazy" alt="Risus purus namien parturient accumsan cacus" class="img-cover">
-                  <time class="card-meta" datetime="2022-07-07">7 March 2024</time>
-                </div>
-                <div class="card-content">
-                  <h3 class="h3"><a href="#" class="card-title">Risus purus namien parturient accumsan cacus</a></h3>
-                  <p class="card-text">Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac habitasse platea dictumst.</p>
-                  <a href="#" class="btn-link has-before">Read More</a>
-                </div>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-      </section>
-    </article>
-  </main>
+        <div class="swiper-slide">
+          <div class="class-card">
+            <figure class="card-banner img-holder" style="--width: 300; --height: 180;">
+              <img src="./assets/images/class-4.jpg" width="300" height="180" loading="lazy" alt="The Fitness Pack" class="img-cover">
+            </figure>
+            <div class="card-content">
+              <div class="title-wrapper">
+                <img src="./assets/images/class-icon-4.png" width="40" height="40" aria-hidden="true" alt="" class="title-icon">
+                <h3 class="h3"><a href="#" class="card-title">The Fitness Pack</a></h3>
+              </div>
+              <p class="card-text">Unlock your potential with The Fitness Pack. Enjoy a combination of cardio, strength, and flexibility workouts. Achieve your fitness goals with expert guidance at EPX Fitness.</p>
+              <div class="card-progress">
+                <div class="progress-wrapper">
+                  <p class="progress-label">Class Full</p>
+                  <span class="progress-value">60%</span>
+                </div>
+                <div class="progress-bg">
+                  <div class="progress-bar" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BLOG -->
+<section class="section blog" id="blog" aria-label="blog">
+  <div class="container">
+    <p class="section-subtitle">Our News</p>
+    <h2 class="h2 section-title text-center">Latest Blog Feed</h2>
+    <div class="swiper mySwiperBlog">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/blog-1.jpg" width="440" height="270" loading="lazy" alt="Going to the gym for the first time" class="img-cover">
+              <time class="card-meta" datetime="2022-07-07">7 March 2024</time>
+            </div>
+            <div class="card-content">
+              <h3 class="h3"><a href="#" class="card-title">Going to the gym for the first time</a></h3>
+              <p class="card-text">Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac habitasse platea dictumst.</p>
+              <a href="#" class="btn-link has-before">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/blog-2.jpg" width="440" height="270" loading="lazy" alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
+              <time class="card-meta" datetime="2022-07-07">7 March 2024</time>
+            </div>
+            <div class="card-content">
+              <h3 class="h3"><a href="#" class="card-title">Parturient accumsan cacus pulvinar magna</a></h3>
+              <p class="card-text">Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac habitasse platea dictumst.</p>
+              <a href="#" class="btn-link has-before">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/blog-3.jpg" width="440" height="270" loading="lazy" alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+              <time class="card-meta" datetime="2022-07-07">7 March 2024</time>
+            </div>
+            <div class="card-content">
+              <h3 class="h3"><a href="#" class="card-title">Risus purus namien parturient accumsan cacus</a></h3>
+              <p class="card-text">Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac habitasse platea dictumst.</p>
+              <a href="#" class="btn-link has-before">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
 
   <!-- FOOTER -->
   <footer class="footer" id="footer">
@@ -299,13 +303,13 @@
             <div class="icon">
               <ion-icon name="call" aria-hidden="true"></ion-icon>
             </div>
-            <div><a href="tel:+915552348765" class="footer-link">+90 541 580 7065</a></div>
+            <div><a href="tel:+90 5415807065" class="footer-link">+90 541 580 7065</a></div>
           </li>
           <li class="footer-list-item">
             <div class="icon">
               <ion-icon name="mail" aria-hidden="true"></ion-icon>
             </div>
-            <div><a href="mailto:info@fitlife.com" class="footer-link">Abdulmalek.akel@gmail.com</a></div>
+            <div><a href="mailto:Abdulmalek.akel@gmail.com" class="footer-link">Abdulmalek.akel@gmail.com</a></div>
           </li>
         </ul>
         <ul class="footer-list">
@@ -346,5 +350,8 @@
   <!-- Ionicons link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
